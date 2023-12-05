@@ -1,0 +1,12 @@
+# Package Related
+*lock.*
+.pnpm-store
+node_modules
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Misc
+LICENSE

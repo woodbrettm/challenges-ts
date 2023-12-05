@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
+  "name": "challenges-ts",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": ["--name", "challenges-ts.dev"],
+  "postCreateCommand": ["pnpm", "install"],
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+    }
+  }
+}

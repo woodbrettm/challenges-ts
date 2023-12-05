@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "lib": ["ESNext"],
+    "strict": true,
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true
+  },
+  "include": ["./challenges/*.ts", "./vite.config.ts"]
+}
