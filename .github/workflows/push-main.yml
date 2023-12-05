@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Changesets Release Flow
+    name: Code Checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
