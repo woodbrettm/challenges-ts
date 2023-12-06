@@ -9,7 +9,6 @@
     "isolatedModules": true,
     "lib": ["ESNext"],
     "strict": true,
-    "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": false,
     "module": "NodeNext",
