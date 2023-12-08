@@ -10,7 +10,8 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/strict-type-checked"
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked"
   ],
   "plugins": ["@typescript-eslint"],
   "overrides": [
@@ -21,6 +22,7 @@
   ],
   "rules": {
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off"
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/array-type": ["error", { "default": "generic" }]
   }
 }
