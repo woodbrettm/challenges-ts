@@ -8,8 +8,8 @@
   "description": "Typescript Challenges",
   "scripts": {
     "check-types": "tsc",
-    "check-eslint": "eslint ./challenges/*.ts --quiet",
-    "check-prettier": "prettier --check ./challenges/*.ts"
+    "check-eslint": "eslint ./challenges/**/*.ts --quiet",
+    "check-prettier": "prettier --check ./challenges/**/*.ts"
   },
   "devDependencies": {
     "@type-challenges/utils": "0.1.1",

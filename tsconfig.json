@@ -15,5 +15,5 @@
     "moduleResolution": "NodeNext",
     "noEmit": true
   },
-  "include": ["./challenges/*.ts", "./vite.config.ts"]
+  "include": ["./challenges/**/*.ts", "./vite.config.ts"]
 }
