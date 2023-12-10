@@ -2,17 +2,22 @@
 https://github.com/type-challenges/type-challenges/blob/main/questions/00014-easy-first/README.md
 */
 
-type arr0 = [];
-type arr1 = ['a', 'b', 'c'];
-type arr2 = [3, 2, 1];
+import { Expect, Equal } from '@type-challenges/utils';
+
+type Arr0 = [];
+type Arr1 = ['a', 'b', 'c'];
+type Arr2 = [3, 2, 1];
 
 type First<T extends [unknown, ...Array<unknown>]> = T[0];
 
 // @ts-expect-error : Require array of min length 1
-type head0 = First<arr0>;
+type Head0 = First<Arr0>;
 
-type head1 = First<arr1>; // expected to be 'a'
-type head2 = First<arr2>; // expected to be 3
+type Head1 = First<Arr1>; // expected to be 'a'
+type Head2 = First<Arr2>; // expected to be 3
+
+type Test1 = Expect<Equal<Head1, 'a'>>;
+type Test2 = Expect<Equal<Head2, 3>>;
 
 /*
  The above implementation requires a check to ensure the
