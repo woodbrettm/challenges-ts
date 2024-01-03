@@ -8,7 +8,7 @@ const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const;
 
 type ObjectKey = string | symbol;
 
-type TupleToObject<T extends ReadonlyArray<ObjectKey>> = {
+type TupleToObject<T extends readonly ObjectKey[]> = {
   [K in T[number]]: K;
 };
 

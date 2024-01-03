@@ -4,7 +4,7 @@ https://github.com/type-challenges/type-challenges/blob/main/questions/00898-eas
 
 import { Expect, Equal } from '@type-challenges/utils';
 
-type Includes<T extends ReadonlyArray<unknown>, Key> = Key extends T[number] ? true : false;
+type Includes<T extends readonly unknown[], Key> = Key extends T[number] ? true : false;
 
 type Example = ['Kars', 'Esidisi', 'Wamuu', 'Santana'];
 

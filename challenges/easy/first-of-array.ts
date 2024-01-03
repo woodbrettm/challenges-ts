@@ -8,7 +8,7 @@ type Arr0 = [];
 type Arr1 = ['a', 'b', 'c'];
 type Arr2 = [3, 2, 1];
 
-type First<T extends [unknown, ...Array<unknown>]> = T[0];
+type First<T extends [unknown, ...unknown[]]> = T[0];
 
 // @ts-expect-error : Require array of min length 1
 type Head0 = First<Arr0>;
@@ -26,4 +26,4 @@ type Test2 = Expect<Equal<Head2, 3>>;
 */
 
 // https://github.com/type-challenges/type-challenges/issues/18
-type FirstUnstrict<T extends Array<unknown>> = T extends [infer U, ...Array<unknown>] ? U : never;
+type FirstUnstrict<T extends unknown[]> = T extends [infer U, ...unknown[]] ? U : never;

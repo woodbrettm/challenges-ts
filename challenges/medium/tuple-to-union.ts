@@ -6,7 +6,7 @@ import { Expect, Equal } from '@type-challenges/utils';
 
 type Arr = ['1', '2', '3', ['4', '5', '6', ['7', '8']], ['9', '10']];
 
-type TupleToUnion<T> = T extends Array<infer U> ? TupleToUnion<U> : T;
+type TupleToUnion<T> = T extends (infer U)[] ? TupleToUnion<U> : T;
 
 type Res = TupleToUnion<Arr>;
 type Test = Expect<Equal<Res, '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10'>>;

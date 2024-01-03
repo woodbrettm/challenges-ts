@@ -4,7 +4,7 @@ https://github.com/type-challenges/type-challenges/blob/main/questions/00533-eas
 
 import { Expect, Equal } from '@type-challenges/utils';
 
-type TuplePrimitives = ReadonlyArray<string | number | boolean>;
+type TuplePrimitives = readonly [string | number | boolean];
 type Concat<T extends TuplePrimitives, K extends TuplePrimitives> = [...T, ...K];
 
 type Result = Concat<[1], [2]>;

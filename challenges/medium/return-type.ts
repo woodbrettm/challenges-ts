@@ -9,7 +9,7 @@ function fn(v: boolean) {
   return 2;
 }
 
-type MyReturnType<F> = F extends (...args: Array<never>) => infer U ? U : never;
+type MyReturnType<F> = F extends (...args: never[]) => infer U ? U : never;
 
 type Result = MyReturnType<typeof fn>;
 type Test = Expect<Equal<Result, 1 | 2>>;
