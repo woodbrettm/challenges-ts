@@ -8,8 +8,8 @@
   "description": "Typescript Challenges",
   "scripts": {
     "check-types": "tsc",
-    "check-eslint": "eslint ./challenges/**/*.ts --quiet",
-    "check-prettier": "prettier --check ./challenges/**/*.ts",
+    "check-eslint": "eslint \"./challenges/**/*.ts\" --quiet",
+    "check-prettier": "prettier --check \"./challenges/**/*.ts\"",
     "check": "pnpm check-types && pnpm check-eslint && pnpm check-prettier"
   },
   "devDependencies": {
