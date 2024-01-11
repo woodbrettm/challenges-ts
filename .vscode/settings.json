@@ -3,8 +3,6 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
-  "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
   "npm.packageManager": "pnpm",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
