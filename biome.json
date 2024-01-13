@@ -1,0 +1,25 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
+  "files": {
+    "ignore": [
+      ".pnpm-store",
+      "**/node_modules"
+    ],
+    "include": ["**/*.ts", "**/*.js"]
+  },
+  "formatter": {
+    "enabled": false
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "useTemplate": "off"
+      }
+    }
+  }
+}

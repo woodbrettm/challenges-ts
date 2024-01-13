@@ -5,13 +5,13 @@ runs:
   using: 'composite'
   steps:
     - name: Types
-      run: pnpm run check-types
+      run: pnpm run check:types
       shell: bash
 
-    - name: ESLint
-      run: pnpm run check-eslint
+    - name: Lint
+      run: pnpm run check:lint
       shell: bash
 
-    - name: Prettier
-      run: pnpm run check-prettier
+    - name: Lint Package
+      run: pnpm run check:package
       shell: bash

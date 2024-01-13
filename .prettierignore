@@ -1,6 +1,7 @@
 # Package Related
 *lock.*
 .pnpm-store
+.pnpm-lock.yaml
 node_modules
 
 # Git
@@ -10,3 +11,7 @@ node_modules
 
 # Misc
 LICENSE
+
+# TS & JS Files
+**/*.ts
+**/*.js

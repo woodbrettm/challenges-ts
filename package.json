@@ -2,23 +2,19 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "challenges-ts",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "license": "MIT",
   "description": "Typescript Challenges",
   "scripts": {
-    "check-types": "tsc",
-    "check-eslint": "eslint \"./challenges/**/*.ts\" --quiet",
-    "check-prettier": "prettier --check \"./challenges/**/*.ts\"",
-    "check": "pnpm check-types && pnpm check-eslint && pnpm check-prettier"
+    "check:types": "tsc",
+    "check:package": "publint .",
+    "check:lint": "biome lint ."
   },
   "devDependencies": {
-    "@types/node": "20.10.6",
+    "@biomejs/biome": "1.5.1",
+    "@types/node": "20.11.0",
     "@type-challenges/utils": "0.1.1",
-    "typescript": "5.3.2",
-    "@typescript-eslint/parser": "6.13.2",
-    "@typescript-eslint/eslint-plugin": "6.13.2",
-    "eslint": "8.55.0",
-    "prettier": "3.1.0"
+    "typescript": "5.3.3",
+    "publint": "0.2.7"
   }
 }

@@ -9,7 +9,12 @@
   "remoteUser": "node",
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+      "extensions": [
+        "biomejs.biome",
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml",
+        "styled-components.vscode-styled-components"
+      ]
     }
   }
 }

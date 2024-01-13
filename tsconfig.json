@@ -13,7 +13,12 @@
     "noUnusedLocals": false,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "noEmit": true
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["./challenges/**/*.ts", "./vite.config.ts"]
+  "exclude": ["**/node_modules"]
 }

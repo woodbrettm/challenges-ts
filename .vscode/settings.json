@@ -3,29 +3,26 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "npm.packageManager": "pnpm",
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "files.insertFinalNewline": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "yaml.schemaStore.enable": true,
+  "[toml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "search.exclude": {
-    "pnpm-lock.yaml": true
+    "**/node_modules": true,
+    "**/.turbo": true,
+    "**/.pnpm-store": true,
+    "**/coverage": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/*lock.json": true,
+    "**/*lock.yaml": true,
+    "**/.git": true
   }
 }
