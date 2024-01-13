@@ -19,18 +19,10 @@ type NotValid = {
   name: 'Not Valid';
 };
 
-type TypeOptions
-<
-  TUnion extends { type: string },
->
-= keyof {
-  [T in TUnion as T['type']]: T['type'];
-};
-
 type Lookup
 <
   T extends { type: string },
-  Key extends TypeOptions<T>,
+  Key extends T['type'],
 >
 = (
   T extends { type: infer U }
